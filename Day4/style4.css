@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(131, 58, 180);
+}
+
+.round {
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    animation: min 10s linear infinite;
+    animation-direction: reverse;
+    background-color: rgba(173, 173, 173, 0.36);
+}
+
+.cover1 {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: blueviolet;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hour {
+    position: absolute;
+    width: 6.5rem;
+    height: 0.2rem;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(225, 228, 76);
+    transform-origin: left center;
+    border-radius: 50% 50% 50% 0;
+    transform: translateY(0%) rotate(210deg);
+}
+
+.minute {
+    position: absolute;
+    width: 8.5rem;
+    height: 0.2rem;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(225, 228, 76);
+    transform-origin: left center;
+    transform: rotate(-30deg) translateY(-50%);
+    border-radius: 50% 50% 50% 0;
+}
+
+.second {
+    position: absolute;
+    width: 8.5rem;
+    height: 0.2rem;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(225, 228, 76);
+    transform-origin: left center;
+    animation: sec 60s steps(60, end) infinite;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(90deg);
+}
+
+@keyframes sec {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
