@@ -1,12 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-// import App from './App';
-// import reportWebVitals from './reportWebVitals';
+import App from "./App";
 
 ReactDOM.render(
-  <h1>
-    <button>Click me</button>Hello World!!
-  </h1>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById("root")
 );
