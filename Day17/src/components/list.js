@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/list.css";
 
 function Calorie(props) {
   //  const {food, calorie} = props ;

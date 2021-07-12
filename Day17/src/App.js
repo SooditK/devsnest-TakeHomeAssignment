@@ -1,6 +1,6 @@
 import "./App.css";
-import Calories from "./components/clrbox";
-import Heading from "./components/heading";
+import Calories from "./components/Clrbox";
+import Heading from "./components/Heading.js";
 
 function App() {
   return (
