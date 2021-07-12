@@ -1,15 +1,13 @@
-import './App.css';
+import "./App.css";
+import Calories from "./components/clrbox";
 import Heading from "./components/heading";
-import Clrbox from "./components/clrbox";
-
 
 function App() {
   return (
     <>
       <div className="main">
         <Heading />
-        <Clrbox />
-
+        <Calories />
       </div>
     </>
   );
